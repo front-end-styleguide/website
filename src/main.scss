@@ -1,0 +1,35 @@
+/* FRONT END STYLEGUIDE
+ * for style guide driven development
+ * ========================================================================== */
+
+// Do not put style declarations in this main Sass file.
+// Only @import styles or definitions from other files.
+// =========================================================
+
+// SETUP
+// =========================================================
+
+@import "../node_modules/normalize.css/normalize";
+@import "setup/variables";
+@import "setup/scaffolding";
+
+// FUNCTIONS
+// =========================================================
+
+@import "functions/svg-url";
+
+// MIXINS
+// =========================================================
+
+@import "mixins/fluid-type";
+@import "mixins/sr-only";
+
+// COMPONENTS
+// =========================================================
+
+@import "components/code/code";
+@import "components/typography/headings";
+@import "components/typography/text";
+@import "components/title/title";
+@import "components/utilities/embed-responsive";
+@import "components/utilities/sr-only";

@@ -1,0 +1,11 @@
+.block {
+  font-size: 1rem;
+}
+
+.block__element {
+  background-color: #c0ffee;
+
+  @media (min-width: $breakpoint-max) {
+    background-color: #1337;
+  }
+}

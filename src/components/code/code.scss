@@ -1,0 +1,35 @@
+/* CODE
+ * ========================================================================== */
+
+@import "../../../node_modules/prismjs/themes/prism";
+
+pre {
+  margin: 0;
+  padding: 1em;
+
+  overflow: auto;
+
+  background-color: $color-code;
+  border-left: 0.375em solid $color-brand;
+
+  code {
+    padding: 0;
+  }
+}
+
+code {
+  padding: 0 0.25em;
+
+  font-size: 0.875em;
+  font-family: $font-family-mono;
+
+  // Reset styling
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  hyphens: none;
+  tab-size: 2;
+
+  background-color: $color-code;
+}

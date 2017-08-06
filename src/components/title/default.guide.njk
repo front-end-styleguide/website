@@ -1,0 +1,8 @@
+{% set title = "Default" %}
+
+{% extends sgSection %}
+
+{% block body %}
+  {% set title = "Subpage title" %}
+  {% include "./default.njk" %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% set title = "Bash" %}
+
+{% extends sgSection %}
+
+{% block body %}
+  <pre><code lang="bash">
+    {%- filter escape %}{% include "./block.sh" %}{% endfilter -%}
+  </code></pre>
+{% endblock %}

@@ -1,0 +1,40 @@
+/* TITLE
+ * ========================================================================== */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title--index {
+  flex-direction: column;
+}
+
+.title__image {
+  @include fluid-type(2rem, 3.5rem);
+
+  display: none;
+  width: 1em;
+  height: 1em;
+
+  @media (min-width: $breakpoint-min) {
+    display: block;
+    margin-right: 0.3em;
+  }
+}
+
+.title__image--index {
+  @include fluid-type(4rem, 10rem);
+
+  display: block;
+  margin-top: 0.5em;
+  margin-right: 0;
+  margin-bottom: 0.2em;
+}
+
+.title__text {
+  margin: 0;
+
+  text-align: center;
+}

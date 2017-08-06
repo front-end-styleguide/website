@@ -1,0 +1,37 @@
+{
+  "name": "front-end-styleguide-website",
+  "description": "Living styleguide for the website of the Front End Styleguide",
+  "version": "0.1.0",
+  "author": "Fynn Becker <info@fynn-becker.de>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/front-end-styleguide/website"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-styleguide/website/issues",
+    "email": "info@fynn-becker.de"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/front-end-styleguide",
+    "test": "./node_modules/.bin/front-end-styleguide test",
+    "development": "./node_modules/.bin/front-end-styleguide development",
+    "preview": "./node_modules/.bin/front-end-styleguide preview",
+    "production": "./node_modules/.bin/front-end-styleguide production"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "front-end-styleguide": "^3.7.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "prismjs": "^1.6.0",
+    "svgxuse": "^1.2.4"
+  }
+}

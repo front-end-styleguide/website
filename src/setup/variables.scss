@@ -1,0 +1,42 @@
+// VARIABLES
+// =============================================================================
+
+// COLORS
+// =========================================================
+
+// Brand Colors
+$color-brand: #1d5097;
+
+// Neutral Colors
+$color-neutral-light: #f5f5f5;
+$color-neutral-medium: #ddd;
+
+// Component Colors
+$color-text: #333;
+$color-code: $color-neutral-light;
+$color-line: $color-neutral-medium;
+
+// TYPOGRAPHY
+// =========================================================
+
+// Font Family
+$font-family-sans: "Maven Pro", Arial, sans-serif;
+$font-family-mono: "Fira Mono", monospace;
+$font-family-hand: "Farsan", cursive;
+
+// Font Weight
+$font-weight-headings: 500;
+
+// Line Height
+$line-height-default: 1.4;
+$line-height-headings: 1.2;
+
+// LAYOUT
+// =========================================================
+
+// Container
+$container-width: 75rem;
+
+// Breakpoints
+$breakpoint-min: 30rem;
+$breakpoint-max: $container-width;

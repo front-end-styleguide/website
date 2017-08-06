@@ -1,0 +1,20 @@
+{
+    "name": "Front End Styleguide",
+    "short_name": "FE Styleguide",
+    "icons": [
+        {
+            "src": "img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1d5097",
+    "background_color": "#1d5097",
+    "start_url": "https://front-end-style.guide",
+    "display": "standalone"
+}
