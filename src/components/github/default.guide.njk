@@ -1,9 +1,7 @@
-{% import "./title.njk" as makeTitle %}
-
 {% set title = "Default" %}
 
 {% extends sgSection %}
 
 {% block body %}
-  {{ makeTitle.default("Subpage title") }}
+  {% include "./github.njk" %}
 {% endblock %}

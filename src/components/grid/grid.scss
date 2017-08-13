@@ -1,0 +1,45 @@
+/* GRID
+ * ========================================================================== */
+
+.grid {
+  // Fallback for Internet Explorer
+  > * {
+    margin-bottom: $grid-gap;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: $grid-gap;
+
+    // Reset fallback
+    > * {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.grid--index {
+  @supports (display: grid) {
+    grid-template-columns: minmax(0, 1fr);
+
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+  }
+}
+
+.grid--github {
+  @supports (display: grid) {
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    }
+  }
+}

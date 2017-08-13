@@ -15,3 +15,4 @@ import 'svgxuse'
 // =========================================================
 
 import './components/code/code'
+import './components/github/github'

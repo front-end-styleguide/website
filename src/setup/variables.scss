@@ -35,8 +35,19 @@ $line-height-headings: 1.2;
 // =========================================================
 
 // Container
-$container-width: 75rem;
+$container-full: 100rem;
+$container-padding: 1rem;
+
+// Grid
+$grid-gap: 2rem;
 
 // Breakpoints
 $breakpoint-min: 30rem;
-$breakpoint-max: $container-width;
+$breakpoint-sm: 40rem;
+$breakpoint-md: 60rem;
+$breakpoint-lg: 75rem;
+$breakpoint-xl: 90rem;
+$breakpoint-max: ($container-full + 2 * $container-padding);
+
+// Components
+$component-padding: 1em;

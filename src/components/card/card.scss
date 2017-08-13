@@ -1,0 +1,29 @@
+/* CARD
+ * ========================================================================== */
+
+.card {
+  padding: $component-padding;
+  background-color: $color-neutral-light;
+}
+
+.card__header {
+  margin-bottom: $component-padding;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__content {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__footer {
+  margin-top: $component-padding;
+}

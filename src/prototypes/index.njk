@@ -1,9 +1,48 @@
+{% import "../components/title/title.njk" as makeTitle %}
+
 {% set pageTitle = "Front End Styleguide" %}
 {% set pageDescription = "Living Styleguide for componentized front end development with Sass, JavaScript and Nunjucks." %}
 
 {% extends "../layouts/prototypes.njk" %}
 
 {% block body %}
-  {% set title = "Front End Styleguide" %}
-  {% include "../components/title/index.njk" %}
+  <main class="container">
+    {{ makeTitle.index("Front End Styleguide", "Living Styleguide for componentized front end development with Sass, JavaScript and Nunjucks") }}
+
+    <div class="grid grid--index">
+      <section id="installation-usage">
+        <h2>Installation</h2>
+        <pre><code lang="bash">{%- filter escape -%}
+# Get CLI access with
+npm install -g front-end-styleguide-cli
+
+# Create a project folder
+mkdir new-project
+
+# Jump into the project folder
+cd new-project
+
+# Initialize a new project
+front-end-styleguide init
+        {%- endfilter -%}</code></pre>
+
+        <h2>Usage</h2>
+        <pre><code lang="bash">{%- filter escape -%}
+# Start development
+front-end-styleguide development
+
+# Run code linting
+front-end-styleguide test
+
+# Build production files
+front-end-styleguide production
+        {%- endfilter -%}</code></pre>
+      </section>
+
+      <section id="github">
+        <h2>GitHub</h2>
+        {% include "../components/github/github.njk" %}
+      </section>
+    </div>
+  </main>
 {% endblock %}

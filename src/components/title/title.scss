@@ -5,6 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40em;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .title--index {
@@ -22,19 +25,23 @@
     display: block;
     margin-right: 0.3em;
   }
+
+  .title--index & {
+    @include fluid-type(4rem, 10rem);
+
+    display: block;
+    margin: 0.5em 0 0.2em;
+  }
 }
 
-.title__image--index {
-  @include fluid-type(4rem, 10rem);
+.title__title {
+  margin: 0 0 0.2em;
 
-  display: block;
-  margin-top: 0.5em;
-  margin-right: 0;
-  margin-bottom: 0.2em;
+  text-align: center;
 }
 
-.title__text {
-  margin: 0;
+.title__subtitle {
+  @include fluid-type(1rem, 1.25rem);
 
   text-align: center;
 }
