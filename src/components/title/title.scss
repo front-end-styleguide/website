@@ -35,6 +35,9 @@
 }
 
 .title__title {
+  // Fix Internet Explorer overflowing text
+  width: 100%;
+
   margin: 0 0 0.2em;
 
   text-align: center;
@@ -42,6 +45,9 @@
 
 .title__subtitle {
   @include fluid-type(1rem, 1.25rem);
+
+  // Fix Internet Explorer overflowing text
+  width: 100%;
 
   text-align: center;
 }
