@@ -1,0 +1,29 @@
+/* FOOTER
+ * ========================================================================== */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40em;
+  max-width: 100%;
+  margin: 6em auto 2em;
+}
+
+.footer__link-list {
+  display: flex;
+}
+
+.footer__link {
+  margin-right: 1em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

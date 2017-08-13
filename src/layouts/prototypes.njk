@@ -27,7 +27,10 @@
       {% include sgNav %}
     {%- endif %}
 
-    {%- block body %}{% endblock %}
+    <div class="container">
+      {%- block body %}{% endblock %}
+      {% include "../components/footer/footer.njk" %}
+    </div>
 
   {%- if meta.env === "development" %}
     <script src="{{ meta.path.toRoot }}js/sg.js"></script>
