@@ -12,12 +12,13 @@
   {% endif %}
 
     {% include "./icons.njk" %}
-    {% include "./webfonts.njk" %}
 
-    <link rel="stylesheet" href="{{ meta.path.toRoot }}css/styles.css?v={{ meta.version }}">
+    <link rel="stylesheet" href="{{ meta.path.toRoot }}css/styles.css">
   {%- if meta.env === "development" %}
-    <link rel="stylesheet" href="{{ meta.path.toRoot }}css/sg.css?v={{ meta.version }}">
+    <link rel="stylesheet" href="{{ meta.path.toRoot }}css/sg.css">
   {%- endif %}
+
+    {% include "./webfonts.njk" %}
 
     {%- block head %}{% endblock %}
   </head>
@@ -29,10 +30,10 @@
     {%- block body %}{% endblock %}
 
   {%- if meta.env === "development" %}
-    <script src="{{ meta.path.toRoot }}js/sg.js?v={{ meta.version }}"></script>
+    <script src="{{ meta.path.toRoot }}js/sg.js"></script>
   {%- endif %}
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
-    <script src="{{ meta.path.toRoot }}js/scripts.js?v={{ meta.version }}"></script>
+    <script src="{{ meta.path.toRoot }}js/scripts.js"></script>
 
     {%- block foot %}{% endblock %}
   </body>
