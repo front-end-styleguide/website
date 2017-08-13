@@ -10,14 +10,17 @@ import Prism from 'prismjs'
 
 // Import additional languages
 import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-django'
 import 'prismjs/components/prism-scss'
 
 // Specify the supported highlight languages
 const allowedHighlights = [
   'bash',
   'css',
+  'django',
   'html',
   'javascript',
+  'jinja2',
   'scss'
 ]
 
@@ -26,7 +29,7 @@ const allowedHighlights = [
  * @param {node} element code element to highlight
  */
 function highlight (element) {
-  let code = element.innerText
+  let code = element.textContent
   let lang = element.getAttribute('lang')
 
   // Quit if the language attribute is not supported

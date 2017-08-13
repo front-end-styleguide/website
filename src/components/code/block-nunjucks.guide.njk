@@ -1,0 +1,9 @@
+{% set title = "Nunjucks" %}
+
+{% extends sgSection %}
+
+{% block body %}
+  <pre><code lang="django">
+    {%- filter escape %}{% include "./block.njk" %}{% endfilter -%}
+  </code></pre>
+{% endblock %}
