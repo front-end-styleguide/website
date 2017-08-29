@@ -3,7 +3,7 @@
 {% extends sgSection %}
 
 {% block body %}
-  <pre><code lang="bash">
-    {%- filter escape %}{% include "./block.sh" %}{% endfilter -%}
+  <pre><code data-lang="bash">
+    {%- filter escape %}{% include "./example-block.sh" %}{% endfilter -%}
   </code></pre>
 {% endblock %}

@@ -3,7 +3,7 @@
 {% extends sgSection %}
 
 {% block body %}
-  <pre><code lang="django">
-    {%- filter escape %}{% include "./block.njk" %}{% endfilter -%}
+  <pre><code data-lang="nunjucks">
+    {%- filter escape %}{% include "./example-block.njk" %}{% endfilter -%}
   </code></pre>
 {% endblock %}
