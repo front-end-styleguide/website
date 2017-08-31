@@ -11,18 +11,18 @@
 
 @import "../node_modules/normalize.css/normalize";
 @import "setup/variables";
-@import "setup/scaffolding";
-
-// FUNCTIONS
-// =========================================================
-
-@import "functions/svg-url";
 
 // MIXINS
 // =========================================================
 
 @import "mixins/fluid-type";
+@import "mixins/font-family";
 @import "mixins/sr-only";
+
+// BASE
+// =========================================================
+
+@import "setup/scaffolding";
 
 // COMPONENTS
 // =========================================================

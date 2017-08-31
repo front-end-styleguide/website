@@ -9,21 +9,3 @@ a {
   text-decoration-skip: ink;
   color: $color-brand;
 }
-
-blockquote {
-  margin: 0 0 1em;
-  padding-left: 1em;
-
-  font-size: 1.1875em;
-  font-family: $font-family-hand;
-  letter-spacing: 0.04em;
-
-  border-left: 0.375em solid $color-brand;
-}
-
-hr {
-  margin: 1em 0;
-
-  border: none;
-  border-bottom: 0.125em solid $color-line;
-}

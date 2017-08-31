@@ -1,4 +1,4 @@
-{% import "../components/title/title.njk" as makeTitle %}
+{% import "../components/title/title.njk" as title %}
 
 {% set pageTitle = "Front End Styleguide" %}
 {% set pageDescription = "Living Styleguide for componentized front end development with Sass, JavaScript and Nunjucks." %}
@@ -7,42 +7,33 @@
 
 {% block body %}
   <main>
-    {{ makeTitle.index("Front End Styleguide", "Living Styleguide for componentized front end development with Sass, JavaScript and Nunjucks") }}
+    {{ title.index("Front End Styleguide", "Living Styleguide for componentized front end development with Sass, JavaScript and Nunjucks") }}
 
     <div class="grid grid--index">
+
       <section id="installation-usage">
+
         <h2>Installation</h2>
-        <pre><code data-lang="bash">{%- filter escape -%}
-# Get CLI access with
-npm install -g front-end-styleguide-cli
-
-# Create a project folder
-mkdir new-project
-
-# Jump into the project folder
-cd new-project
-
-# Initialize a new project
-front-end-styleguide init
-        {%- endfilter -%}</code></pre>
+        <pre><code data-lang="bash">
+          {%- filter escape -%}
+            {% include "../code/index/installation.sh" %}
+          {%- endfilter -%}
+        </code></pre>
 
         <h2>Usage</h2>
-        <pre><code data-lang="bash">{%- filter escape -%}
-# Start development
-front-end-styleguide development
+        <pre><code data-lang="bash">
+          {%- filter escape -%}
+            {% include "../code/index/usage.sh" %}
+          {%- endfilter -%}
+        </code></pre>
 
-# Run code linting
-front-end-styleguide test
-
-# Build production files
-front-end-styleguide production
-        {%- endfilter -%}</code></pre>
       </section>
 
       <section id="github">
         <h2>GitHub</h2>
         {% include "../components/github/github.njk" %}
       </section>
+
     </div>
   </main>
 {% endblock %}

@@ -11,14 +11,15 @@
     <title>{{ pageTitle }}</title>
   {% endif %}
 
+    {% include "./resource-hints.njk" %}
+    {% include "./webfonts.njk" %}
     {% include "./icons.njk" %}
+    {% include "./social-media.njk" %}
 
     <link rel="stylesheet" href="{{ meta.path.toRoot }}css/styles.css">
   {%- if meta.env === "development" %}
     <link rel="stylesheet" href="{{ meta.path.toRoot }}css/sg.css">
   {%- endif %}
-
-    {% include "./webfonts.njk" %}
 
     {%- block head %}{% endblock %}
   </head>

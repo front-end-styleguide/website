@@ -6,12 +6,12 @@
 
     <title>{{ meta.title }}</title>
 
+    {% include "./resource-hints.njk" %}
+    {% include "./webfonts.njk" %}
     {% include "./icons.njk" %}
 
     <link rel="stylesheet" href="{{ meta.path.toRoot }}css/styles.css">
     <link rel="stylesheet" href="{{ meta.path.toRoot }}css/sg.css">
-
-    {% include "./webfonts.njk" %}
   </head>
   <body class="sg-background">
 

@@ -1,11 +1,14 @@
-{% set iconPath = meta.path.toRoot + 'img/icons/' %}
+{% set iconPath = meta.path.toRoot + "img/icons/" %}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ iconPath }}apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ iconPath }}favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ iconPath }}favicon-16x16.png">
-<link rel="manifest" href="{{ meta.path.toRoot}}manifest.json">
 <link rel="mask-icon" href="{{ iconPath }}safari-pinned-tab.svg" color="#1d5097">
+<link rel="shortcut icon" href="{{ pathToIcons }}/favicon.ico">
+<link rel="manifest" href="{{ meta.path.toRoot}}manifest.json">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Front End Styleguide">
 <meta name="application-name" content="Front End Styleguide">
+<meta name="msapplication-config" content="{{ meta.path.toRoot }}browserconfig.xml">
 <meta name="theme-color" content="#1d5097">

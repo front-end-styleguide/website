@@ -1,9 +1,9 @@
-{% import "./title.njk" as makeTitle %}
+{% import "./title.njk" as titleComponent %}
 
 {% set title = "Default" %}
 
 {% extends sgSection %}
 
 {% block body %}
-  {{ makeTitle.default("Subpage title") }}
+  {{ titleComponent.default("Subpage title") }}
 {% endblock %}

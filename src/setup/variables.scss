@@ -20,9 +20,10 @@ $color-line: $color-neutral-medium;
 // =========================================================
 
 // Font Family
-$font-family-sans: "Maven Pro", Arial, sans-serif;
-$font-family-mono: "Fira Mono", monospace;
-$font-family-hand: "Farsan", cursive;
+$font-family-sans-fallback: Arial, sans-serif;
+$font-family-sans: "Maven Pro", $font-family-sans-fallback;
+$font-family-mono-fallback: monospace;
+$font-family-mono: "Fira Mono", $font-family-mono-fallback;
 
 // Font Weight
 $font-weight-headings: 500;

@@ -1,0 +1,12 @@
+{% set pagePath = '' if meta.path.fileName == 'index.html' else meta.path.fileName %}
+
+<meta property="og:site_name" content="Front End Styleguide">
+<meta property="og:title" content="{{ pageTitle | truncate(69, true, "…") }}">
+<meta property="og:description" content="{{ pageDescription | truncate(199, true, "…") }}">
+<meta property="og:image" content="https://front-end-style.guide/img/social-media.jpg">
+<meta property="og:url" content="https://front-end-style.guide/{{ pagePath }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@mvsde">
+<meta name="twitter:image:alt" content="Logo of the Front End Styleguide">
+

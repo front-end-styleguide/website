@@ -5,13 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40em;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .title--index {
+  width: 40em;
   flex-direction: column;
+
+  text-align: center;
 }
 
 .title__image {
@@ -39,8 +41,6 @@
   width: 100%;
 
   margin: 0 0 0.2em;
-
-  text-align: center;
 }
 
 .title__subtitle {
@@ -48,6 +48,4 @@
 
   // Fix Internet Explorer overflowing text
   width: 100%;
-
-  text-align: center;
 }
